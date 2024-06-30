@@ -1,0 +1,46 @@
+body {
+    background-color: burlywood;
+}
+
+.qouteBox {
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 30px;
+    border-style: solid;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.qouteBox blockquote {
+    font-size: 26px;
+    min-height: 10px;
+}
+.qouteBox blockquote::before, .qouteBox blockquote::after {
+    content: '"';
+}
+#Name {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+#Name::before {
+    content: '__';
+    width: 10px;
+    position: absolute;
+    top: -45%;
+    left: -40%;
+}
+.btns {
+    margin-top: 20%;
+    /* display: flex; */
+    justify-content: center;
+}
+.btns button {
+    background-color: crimson;
+    border-radius: 25px;
+    width: 110px;
+    height: 30px;
+}
+
