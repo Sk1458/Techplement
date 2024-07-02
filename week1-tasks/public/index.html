@@ -4,17 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qoutes</title>
+    <link rel="shortcut icon" href="Q.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
+    <video autoplay loop muted id="videoBg" src="rainBackground.mp4">
+        Your Browser Does not Support video tag.
+    </video>
+    <div class="searchBar">
+        <input type="text" id="authorInput" placeholder="Enter Author's name"> <br>
+        <button id="searchBtn" onclick="searchQuote()">Search Quote</button>
+    </div>
     <div class="qouteBox">
         <h1>Qoute of the Day</h1>
-        <blockquote>Loading.....</blockquote>
-        <div id="Name">Author name</div> <br>
-        <div class="btns">
-            <button id="btn1">New Qoute</button>    
-        </div>
+        <div id="text">  </div>
+        <div id="Name"> </div> <br>
     </div>
+    <div class="btns">
+        <button id="btn1" onclick="generate()">New Qoute</button>    
+    </div>
+
+    <script>
+        var video = document.getElementById('videoBg');
+        const quote = document.getElementById('text');
+        const authorName = document.getElementById('Name');
+
+        window.onload = function() {
+            generate();
+            playVideo();
+        }
+        
+        async function generate() {
+            const response = await fetch("http://localhost:3000/api/quotes", {
+                method: "GET"
+            });
+            const data = await response.json();
+            //console.log(data);
+            quote.innerText = data[0].quote;
+            authorName.innerText = data[0].author;
+            // console.log(response.data);
+
+        }
+
+        async function searchQuote() {
+            const authorInput = document.getElementById('authorInput').value;
+            const response = await fetch(`http://localhost:3000/api/search?author=${authorInput}`);
+            const data = await response.json();
+
+            //console.log(data);
+
+            if(response.ok) {
+                quote.innerText = data.quote;
+                authorName.innerText = data.author;
+            }
+            else {
+                console.log(data.error);
+                alert(data.error);
+            }
+            
+        }
+
+        function playVideo() {
+            var isPlaying = localStorage.getItem('videoPlaying');
+            if(isPlaying === 'true') {
+                video.play();
+            }
+
+            video.onplay = function() {
+                localStorage.setItem('videoPlaying', 'true');
+            }
+
+            video.onpause = function() {
+                localStorage.setItem('videoPlaying', 'false');
+            }
+        }
+    </script>
+
 </body>
 </html>

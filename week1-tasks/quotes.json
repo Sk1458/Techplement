@@ -1,0 +1,86 @@
+[
+    {
+        "author": "William Shakespeare",
+        "quote": "To be, or not to be: that is the question."
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving."
+    },
+    {
+        "author": "Mark Twain",
+        "quote": "The secret of getting ahead is getting started."
+    },
+    {
+        "author": "Oscar Wilde",
+        "quote": "Be yourself; everyone else is already taken."
+    },
+    {
+        "author": "Mahatma Gandhi",
+        "quote": "Be the change that you wish to see in the world."
+    },
+    {
+        "author": "Marilyn Monroe",
+        "quote": "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best."
+    },
+    {
+        "author": "Dr. Seuss",
+        "quote": "Don't cry because it's over, smile because it happened."
+    },
+    {
+        "author": "J.K. Rowling",
+        "quote": "It is our choices, Harry, that show what we truly are, far more than our abilities."
+    },
+    {
+        "author": "F. Scott Fitzgerald",
+        "quote": "So we beat on, boats against the current, borne back ceaselessly into the past."
+    },
+    {
+        "author": "Jane Austen",
+        "quote": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+    },
+    {
+        "author": "Elon Musk",
+        "quote": "When something is important enough, you do it even if the odds are not in your favor."
+    },
+    {
+        "author": "Mark Zuckerberg",
+        "quote": "The biggest risk is not taking any risk... In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks."
+    },
+    {
+        "author": "Jeff Bezos",
+        "quote": "One of the only ways to get out of a tight box is to invent your way out."
+    },
+    {
+        "author": "Steve Jobs",
+        "quote": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do."
+    },
+    {
+        "author": "Bill Gates",
+        "quote": "It's fine to celebrate success, but it is more important to heed the lessons of failure."
+    },
+    {
+        "author": "Richard Branson",
+        "quote": "Business opportunities are like buses, there’s always another one coming."
+    },
+    {
+        "author": "Larry Page",
+        "quote": "If you’re not doing some things that are crazy, then you’re doing the wrong things."
+    },
+    {
+        "author": "Jack Ma",
+        "quote": "Never give up. Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine."
+    },
+    {
+        "author": "Warren Buffett",
+        "quote": "It takes 20 years to build a reputation and five minutes to ruin it. If you think about that, you’ll do things differently."
+    },
+    {
+        "author": "Sara Blakely",
+        "quote": "Don't be intimidated by what you don't know. That can be your greatest strength and ensure that you do things differently from everyone else."
+    },
+    {
+        "author" : "testing",
+        "quote" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nam ipsa mollitia libero magni quis repellat culpa optio provident alias. Nobis laboriosam neque possimus culpa. Facere ad eum nisi dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nam ipsa mollitia libero magni quis repellat culpa optio provident alias. Nobis laboriosam neque possimus culpa. Facere ad eum nisi dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nam ipsa mollitia libero magni quis repellat culpa optio provident alias. Nobis laboriosam neque possimus culpa. Facere ad eum nisi dolore!"
+    }
+]
